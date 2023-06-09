@@ -1,0 +1,64 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 33
+    buildToolsVersion "30.0.2"
+
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    //retrofit2
+    api 'com.squareup.retrofit2:retrofit:2.9.0'
+    //这里用api 是为了让其他模块也可以使用gson
+    api 'com.squareup.retrofit2:converter-gson:2.9.0'
+    //日志拦截器
+    api 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    api 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
+    //rxjava
+    api 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    api 'io.reactivex.rxjava3:rxjava:3.1.4'
+    api 'androidx.preference:preference:1.2.0'
+    //图片加载框架
+    api 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    //RecyclerView最好的适配器，让你的适配器一目了然，告别代码冗余
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
+    //轮播库
+    api 'io.github.youth5201314:banner:2.2.2'
+    //Android SQLite操作框架
+    api 'org.litepal.guolindev:core:3.1.1'
+    //列表item侧滑删除
+    api 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.3.0'
+
+
+}
