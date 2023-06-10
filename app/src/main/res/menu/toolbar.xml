@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- always 永远显示在Toolbar中
+    Toolbar中的Action只会显示图标,菜单中的Action按钮只会显示文字
+    -->
+    <item
+        android:id="@+id/backup"
+        android:icon="@drawable/a"
+        android:title="Backup"
+        app:showAsAction="always" />
+    <!-- iRoom屏幕空间足够的情况下显示在Toolbar中,不够的话就显示在菜单当中-->
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/a"
+        android:title="Backup"
+        app:showAsAction="ifRoom" />
+    <!-- never 永远显示在菜单中-->
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/a"
+        android:title="Backup"
+        app:showAsAction="never" />
+</menu>

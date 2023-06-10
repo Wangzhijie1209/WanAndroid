@@ -29,12 +29,15 @@ public class NetworkRequiredInfo implements INetworkRequiredInfo {
     @Override
     public String getAppVersionCode() {
         return String.valueOf(BuildConfig.VERSION_CODE);
+
     }
 
     @Override
     public boolean isDebug() {
         return BuildConfig.DEBUG;
+
     }
+
 
     @Override
     public Application getApplicationContext() {

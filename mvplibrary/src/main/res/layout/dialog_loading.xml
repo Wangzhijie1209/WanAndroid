@@ -8,6 +8,8 @@
     android:gravity="center"
     android:orientation="vertical">
 
+
+
     <!--旋转的图-->
     <com.llw.mvplibrary.view.LoadingView
         android:layout_width="wrap_content"

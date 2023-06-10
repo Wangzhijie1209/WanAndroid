@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 控件处于选中状态时生效   选中-->
+    <item android:state_checked="true" android:color="@color/_0091ea"/>
+    <!--控件处于按下状态时生效   按下-->
+    <item android:state_pressed="true" android:color="@color/_a5a9aa"/>
+    <!--控件处于选定状态时生效  显示-->
+    <item android:state_selected="true" android:color="@color/_a5a9aa"/>
+    <!--没被选中时的颜色-->
+    <item android:color="@color/_a5a9aa"/>
+</selector>
