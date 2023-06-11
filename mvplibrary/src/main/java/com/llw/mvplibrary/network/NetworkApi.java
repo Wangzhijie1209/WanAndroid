@@ -48,7 +48,7 @@ public class NetworkApi {
     private static void getBaseUrl(int type) {
         switch (type) {
             case 0://天行API
-                mBaseUrl = "http://service.picasso.adesk.com";
+                mBaseUrl = "https://www.wanandroid.com";
                 break;
             case 1://百度SDK地址
                 mBaseUrl = "https://aip.baidubce.com";
